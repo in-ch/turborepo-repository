@@ -6,7 +6,8 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
     "next": "13.0.0",
@@ -16,11 +17,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@types/jest": "^29.2.1",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.7",
+    "babel-jest": "^29.2.2",
     "eslint": "7.32.0",
     "eslint-config-custom": "*",
+    "jest": "^29.2.2",
+    "ts-jest": "^29.0.3",
     "tsconfig": "*",
     "typescript": "^4.8.4"
   }
