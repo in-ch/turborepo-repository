@@ -1,8 +1,9 @@
 module.exports = {
+  plugins: ['import', '@typescript-eslint', 'react', 'prettier'],
   extends: [
-    "next", 
-    "turbo", 
-    "prettier",     
+    'next',
+    'turbo',
+    'prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -14,8 +15,6 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
     'import/extensions': 'off',
     'import/no-cycle': [0, { ignoreExternal: true }],
     'jsx-a11y/anchor-is-valid': 'off',
@@ -26,12 +25,12 @@ module.exports = {
       },
     ],
     'prefer-const': 'off',
-    'prettier/prettier': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx', '.jsx'] }],
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': ['error', { custom: 'ignore' }],
     'react/no-unescaped-entities': 'off',
+    'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       2,
       {
@@ -48,6 +47,14 @@ module.exports = {
     // note you must disable the base rule as it can report incorrect errors
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+    '@next/next/no-html-link-for-pages': 'off',
+    'react/jsx-key': 'off',
+    'no-console': [
+      2,
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
   },
   settings: {
     'import/parsers': {
@@ -61,7 +68,5 @@ module.exports = {
     react: {
       version: 'detect',
     },
-
-    
   },
 };
