@@ -36,5 +36,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "math-helpers": "^0.1.0"
   }
 }
